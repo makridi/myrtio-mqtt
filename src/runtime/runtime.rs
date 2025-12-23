@@ -59,7 +59,7 @@ pub struct MqttRuntime<
 /// Constants for the internal publish outbox used during module callbacks.
 const OUTBOX_CAPACITY: usize = 8;
 const OUTBOX_TOPIC_SIZE: usize = 128;
-const OUTBOX_PAYLOAD_SIZE: usize = 512;
+const OUTBOX_PAYLOAD_SIZE: usize = 1024;
 
 impl<'a, T, M, const MAX_TOPICS: usize, const BUF_SIZE: usize, const OUTBOX_DEPTH: usize>
     MqttRuntime<'a, T, M, MAX_TOPICS, BUF_SIZE, OUTBOX_DEPTH>
